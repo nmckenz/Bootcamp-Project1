@@ -1,0 +1,143 @@
+.contact-section {
+    background: #FFE9E9;
+    padding-top: 100px;
+}
+
+.footer-nav {
+    width: 27%;
+    float: left;
+    // padding: 30px 0;
+    padding-top: 30px;
+    font-weight: 500;
+    @media (max-width:1105px) {
+        // float: none;
+        // display: block;
+        padding: 0;
+        width: 100%;
+        margin: 0 auto;
+        clear: right;
+        padding-bottom: 75px;
+    }
+}
+
+.footer-nav li {
+    @media (max-width:1105px) {
+        float: left;
+        width: 25%;
+        text-align: center;
+    }
+}
+
+.footer-email-input {
+    width: 46%;
+    float: left;
+    text-align: center;
+    padding: 0 5px;
+    @media (max-width:1105px) {
+        // float: none;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.footer-contact-info {
+    width: 27%;
+    float: right;
+    text-align: right;
+    // padding: 30px 0;
+    padding-top: 30px;
+    @media (max-width:1105px) {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        padding-top: 75px;
+    }
+}
+
+.footer-copyright {
+    clear: both;
+    width: 100%;
+    background: #201E21;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-nav a {
+    color: #201E21 ;
+}
+
+.contact-section h3 {
+    margin: 0;
+}
+
+.footer-email-input h3 {
+    padding-bottom: 40px;
+}
+
+.footer-email-input p {
+    padding: 5px 0;
+}
+
+.user-email-input {
+    width: calc(100% - 32%);
+    height: 40px;
+    float: left;
+    @media (max-width:1105px) {
+        width: 100%;
+    }
+}
+
+.user-email-submit {
+    width: 32%;
+    height: 40px;
+    float: left;
+    @media (max-width:1105px) {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+.footer-email-input input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    font-size: 20px;
+    padding: 2.5px 7.5px;
+    @media (max-width:1105px) {
+        text-align: center;
+    }
+}
+
+.footer-email-input input:focus {
+    border: 3px solid #0178A5;
+}
+
+.footer-email-input button {
+    font-family: 'East Sea Dokdo', cursive;
+    background: #0178A5;
+    // width: 45%;
+    padding: 5px 15px;
+    border: 0;
+}
+
+.footer-contact-info h3 {
+    font-size: 4rem;
+    @media (max-width:1105px) {
+        font-size: 5.5rem;
+    }
+}
+
+.footer-contact-info a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #201E21;
+}
+
+.footer-contact-info li:nth-of-type(1) p {
+    font-family: 'East Sea Dokdo', cursive;
+}
+
+.footer-contact-info li:nth-of-type(2) p {
+    display: inline;
+}

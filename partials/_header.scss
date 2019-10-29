@@ -1,0 +1,148 @@
+header {
+    background-image: url("../assets/header-image.jpg");
+    height: 90vh;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    height: 10vh;
+    // width: 100%;
+    transition: all 0.5s;
+    position: static;
+
+    @media (max-width: 1205px) {
+        position: absolute; 
+        top: -10vh;
+        }
+}
+
+nav ul {
+    float: left;
+}
+
+nav li {
+    display: inline-block;
+    font-weight: 500;
+}
+
+nav li a, .footer-nav{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 20px;
+    font-weight: medium;
+    line-height: 29px;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    padding: 0px 10px;
+
+}
+
+h1 {
+    @media (max-width: 1205px) {
+        position: absolute;
+        top: 20vh;
+    }
+}
+
+.social-links {
+    text-align: right;
+    position: absolute;
+    bottom: 5%;
+    right: 2.5%;
+    @media (max-width: 1205px) {
+        display: none;
+    }
+}
+
+.social-links i {
+    margin: 5px 0;
+    color: white;
+}
+
+
+
+// -------------------------
+// mobile nav
+
+
+.fa-bars {
+    font-size: 4rem;
+    color: white;
+}
+
+.fa-times {
+    // display: none;
+    font-size: 4rem;
+    color: white;
+}
+
+
+input[type="checkbox"] {
+	display: none;
+}
+
+label[icon-type="bars"] {
+    display: none;
+    position: absolute;
+    z-index: 20;
+    top: 15px;
+    right: 25px;
+    transition: all 0.5s;
+
+    @media (max-width: 1205px) {
+        display: block;
+        // position: fixed;
+    }
+}
+
+input[type="checkbox"]:checked + nav {
+    top: 0;
+    z-index: 10;
+
+    @media (max-width: 1205px) {
+        position: fixed;
+    }
+}
+
+input[type="checkbox"]:checked ~ label[icon-type="bars"] {
+    transform: rotate(90deg);
+}
+
+label[icon-type="times"] {
+    display: none;
+    position: absolute;
+    z-index: 20;
+    top: 15px;
+    right: 25px;
+    transition: all 0.5s;
+
+    @media (max-width: 1205px) {
+        display: block;
+        // position: fixed;
+    }
+}
+
+input[type="checkbox"]:checked ~ label[icon-type="bars"] {
+    transform: scale(0);
+}
+
+input[type="checkbox"] ~ label[icon-type="times"] {
+    transform: scale(0);
+    display: block;
+    position: fixed;
+}
+
+input[type="checkbox"]:checked ~ label[icon-type="times"] {
+    transform: scale(1)
+    
+}
+
+
+
+
+
+
+
+
+

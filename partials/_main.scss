@@ -1,0 +1,326 @@
+// TO DO -------------------------
+
+// - blog content margin not equal to wrapper
+// consider if read more buttons should be made into buttons to be more semantic, rather than links as they are now
+
+
+
+// --------------------------
+// begin new product section styling
+.new-product-section {
+    background: #FFE9E9;
+    padding: 100px 0;
+}
+
+.new-product-image {
+    width: 22.5%;
+    float: left;
+
+    @media (max-width: 1215px) {
+        width: 100%;
+        clear: right;
+    }
+}
+
+.new-product-image img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    @media (max-width: 1215px) {
+        margin: 0 auto 50px;
+    }
+}
+
+.new-product-content {
+    width: 77.5%;
+    float: right;
+    display: inline-block;
+    text-align: left;
+    padding-left: 25px;
+
+    @media (max-width: 1215px) {
+        width: 100%;
+        float: left;
+        padding-left: 0;
+    }
+}
+
+.new-product-content li:nth-of-type(1) {
+    @media (max-width: 1215px) {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}
+
+.new-product-content li:nth-of-type(2) {
+    padding: 11.5px 0;
+    @media (max-width: 1215px) {
+        margin-bottom: 25px;
+    }
+}
+
+.new-product-content li:nth-of-type(3) {
+    display: inline-block;
+    @media (max-width: 1215px) {
+        display: block;
+    }
+}
+
+.new-product-content li:nth-of-type(3) a {
+    background: #0178A5;
+    display: inline-block;
+    
+}
+// end new product section styling
+// ---------------------------------
+
+
+
+// -----------------------------------
+// begin latest exhibitions section styling
+
+.latest-exhibitions-section {
+    background: #F7DAE8;
+    padding: 100px 0;
+}
+
+.latest-exhibitions-section h2 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.exhibit-images-list {
+    text-align: justify;
+}
+
+.exhibit-image {
+    width: calc((100% / 3) - (50px / 3));
+    float: left;
+    @media (max-width:1024px) {
+        width: calc((100% / 2) - 10px);
+    }
+}
+
+.exhibit-images-list li:first-of-type {
+    // float: left;
+}
+
+.exhibit-image1 {
+    @media (max-width:1024px) {
+        margin-right: 10px;
+    }
+}
+
+.exhibit-image2 {
+    margin: 0px 25px;
+    @media (max-width:1024px) {
+        margin: 0;
+        float: right;
+        margin-left: 10px;
+    }
+}
+
+.exhibit-image a {
+    display: block;
+}
+
+.exhibit-image img {
+    display: block;
+    max-width: 100%;
+}
+
+
+
+.exhibit-image3 {
+    @media (max-width:1024px) {
+        display: none;
+    }
+}
+// end latest exhibition section styling
+// ---------------------------------------
+
+
+
+// ----------------------------------------
+// begin mid nav section styling
+.mid-nav-section {
+    background: #FFE9E9;
+    padding: 50px 0;
+}
+
+.mid-nav-list {
+    width: 100%;
+    text-align: center;
+}
+
+.mid-nav-list li {
+    width: calc(100% / 3);
+    float: left;
+    @media (max-width:650px) {
+        float: none;
+        margin: 0 auto;
+    }
+
+}
+
+.mid-nav-list li:nth-of-type(2) {
+    @media (max-width:650px) {
+        margin: 25px auto;
+    }
+}
+
+.mid-nav-list li i {
+    width: 100%;
+    font-size: 50px;
+    color: #0178A5;
+}
+
+.mid-nav-list li a {
+    display: inline-block;
+    color: #201E21;
+}
+// end mid nav section styling
+// --------------------------------
+
+
+
+// -----------------------------------
+// begin blog section styling
+.blog-section {
+    background: #F7DAE8;
+}
+
+// .blog-post-one .blog-image {
+//     // display: inline-block;
+//     // display: block;
+//     // width: 50%;
+//     background-image: url("../assets/right-image.jpg");
+//     background-size: cover;
+//     background-position: center;
+// }
+
+// .blog-post-two .blog-image {
+//     display: inline-block;
+//     width: 50%;
+//     // background-image: url("../assets/left-image.jpg");
+//     // background-size: cover;
+// }
+
+.blog-image {
+    display: inline-block;
+    width: 50%;
+}
+
+.blog-image img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    @media (max-width:1085px) {
+        margin: 0 auto;
+    }
+}
+
+.blog-content {
+    width: 50%;
+    padding: 100px 0;
+    @media (max-width:1385px) {
+        padding: 75px 0;
+    }
+    @media (max-width:1270px) {
+        padding: 50px 0;
+    }
+    @media (max-width:1185px) {
+        padding: 25px 0;
+    }
+    @media (max-width:1085px) {
+        text-align: center;
+    }
+}
+
+
+
+.blog-content li:nth-of-type(2) {
+    padding: 11.5px 0;
+    @media (max-width:1085px) {
+        margin: 25px 0;
+    }
+}
+
+.blog-post-one .blog-image {
+    float: right;
+
+    // background-image: url("../assets/right-image.jpg");
+    // background-size: cover;
+    // background-position: center;
+
+    @media (max-width:1085px) {
+        float: none;
+        width: 100%;
+    }
+}
+
+.blog-post-one .blog-content {
+    float: left;
+    padding-right: 50px;
+    @media (max-width:1085px) {
+        float: none;
+        width: 100%;
+        padding: 50px 0;
+    }
+}
+
+.blog-post-one .blog-content ul {
+    float: right;
+    @media (max-width:1085px) {
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+.blog-post-two .blog-image {
+    float: left;
+    @media (max-width:1085px) {
+        float: none;
+        width: 100%;
+    }
+}
+
+.blog-post-two .blog-content {
+    float: right;
+    padding-left: 50px;
+    @media (max-width:1085px) {
+        float: none;
+        width: 100%;
+        padding: 50px 0;
+    }
+}
+
+.blog-post-two .blog-content ul {
+    float: left;
+    @media (max-width:1085px) {
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+.blog-content ul {
+    width: 80%;
+}
+
+.blog-content li:nth-of-type(3) {
+    display: inline-block;
+}
+
+.blog-content li:nth-of-type(3) a {
+    background: #A7059B;
+    display: inline-block;
+}
+
+.blog-content ul {
+    @media (max-width:1085px) {
+        float: none;
+        margin: 0 auto;
+    }
+}
+// end blog section styling
+// ------------------------------

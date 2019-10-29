@@ -1,0 +1,74 @@
+* {
+    // border: 1px solid red;
+}
+
+body {
+    font-family: 'East Sea Dokdo', cursive;
+    color: #201E21;
+}
+
+body p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    line-height: 29px;
+    letter-spacing: 0.2px;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 12.2rem;
+    line-height: 94.3px;
+    text-align: right;
+    display: inline-block;
+}
+
+h2 {
+    font-size: 7.5rem;
+    line-height: 36px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 5.5rem;
+    line-height: 36px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.global-button-styling {
+    font-size: 4.5rem;
+    line-height: 29px;
+    text-align: center;
+    color: white;
+}
+
+.global-button-styling a {
+    color: white;
+    padding: 5px 15px;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
