@@ -1,10 +1,3 @@
-// TO DO -------------------------
-
-// - blog content margin not equal to wrapper
-// consider if read more buttons should be made into buttons to be more semantic, rather than links as they are now
-
-
-
 // --------------------------
 // begin new product section styling
 .new-product-section {
@@ -16,18 +9,20 @@
     width: 22.5%;
     float: left;
 
-    @media (max-width: 1215px) {
-        width: 100%;
-        clear: right;
-    }
-}
+    height: 37vh;
+    background-image: url("../assets/small-box.jpg");
+    background-size: cover;
+    background-position: center;
 
-.new-product-image img {
-    display: block;
-    max-width: 100%;
-    height: 100%;
-    @media (max-width: 1215px) {
-        margin: 0 auto 50px;
+    @media (max-width: 1080px) {
+        width: 50%;
+        float: unset;
+        clear: right;
+        margin: 0 auto;
+    }
+
+    @media (max-width:590px) {
+        width: 100%;
     }
 }
 
@@ -38,7 +33,7 @@
     text-align: left;
     padding-left: 25px;
 
-    @media (max-width: 1215px) {
+    @media (max-width: 1080px) {
         width: 100%;
         float: left;
         padding-left: 0;
@@ -46,22 +41,22 @@
 }
 
 .new-product-content li:nth-of-type(1) {
-    @media (max-width: 1215px) {
+    @media (max-width: 1080px) {
         text-align: center;
-        margin-bottom: 25px;
+        margin: 50px 0 25px;
     }
 }
 
 .new-product-content li:nth-of-type(2) {
-    padding: 11.5px 0;
-    @media (max-width: 1215px) {
+    padding: 16.9px 0;
+    @media (max-width: 1080px) {
         margin-bottom: 25px;
     }
 }
 
 .new-product-content li:nth-of-type(3) {
     display: inline-block;
-    @media (max-width: 1215px) {
+    @media (max-width: 1080px) {
         display: block;
     }
 }
@@ -101,10 +96,6 @@
     }
 }
 
-.exhibit-images-list li:first-of-type {
-    // float: left;
-}
-
 .exhibit-image1 {
     @media (max-width:1024px) {
         margin-right: 10px;
@@ -128,8 +119,6 @@
     display: block;
     max-width: 100%;
 }
-
-
 
 .exhibit-image3 {
     @media (max-width:1024px) {
@@ -160,7 +149,6 @@
         float: none;
         margin: 0 auto;
     }
-
 }
 
 .mid-nav-list li:nth-of-type(2) {
@@ -190,54 +178,17 @@
     background: #F7DAE8;
 }
 
-// .blog-post-one .blog-image {
-//     // display: inline-block;
-//     // display: block;
-//     // width: 50%;
-//     background-image: url("../assets/right-image.jpg");
-//     background-size: cover;
-//     background-position: center;
-// }
-
-// .blog-post-two .blog-image {
-//     display: inline-block;
-//     width: 50%;
-//     // background-image: url("../assets/left-image.jpg");
-//     // background-size: cover;
-// }
-
 .blog-image {
     display: inline-block;
     width: 50%;
 }
 
-.blog-image img {
-    max-width: 100%;
-    display: block;
-    object-fit: cover;
-    @media (max-width:1085px) {
-        margin: 0 auto;
-    }
-}
-
 .blog-content {
     width: 50%;
-    padding: 100px 0;
-    @media (max-width:1385px) {
-        padding: 75px 0;
-    }
-    @media (max-width:1270px) {
-        padding: 50px 0;
-    }
-    @media (max-width:1185px) {
-        padding: 25px 0;
-    }
     @media (max-width:1085px) {
         text-align: center;
     }
 }
-
-
 
 .blog-content li:nth-of-type(2) {
     padding: 11.5px 0;
@@ -246,22 +197,40 @@
     }
 }
 
+.blog-post-one {
+    position: relative;
+}
+
+.blog-post-two {
+    // height: 60vh;
+    position: relative;
+}
+
 .blog-post-one .blog-image {
     float: right;
-
-    // background-image: url("../assets/right-image.jpg");
-    // background-size: cover;
-    // background-position: center;
+    height: 60vh;
+    background-image: url("../assets/right-image.jpg");
+    background-size: cover;
+    background-position: center;
 
     @media (max-width:1085px) {
         float: none;
         width: 100%;
+        height: 300px;
     }
+}
+
+.blog-content-sizing {
+    height: 60vh;
+    position: relative;
 }
 
 .blog-post-one .blog-content {
     float: left;
     padding-right: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     @media (max-width:1085px) {
         float: none;
         width: 100%;
@@ -279,15 +248,24 @@
 
 .blog-post-two .blog-image {
     float: left;
+    height: 60vh;
+    background-image: url("../assets/left-image.jpg");
+    background-size: cover;
+    background-position: center;
     @media (max-width:1085px) {
         float: none;
         width: 100%;
+        height: 300px;
     }
 }
 
 .blog-post-two .blog-content {
     float: right;
     padding-left: 50px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
     @media (max-width:1085px) {
         float: none;
         width: 100%;

@@ -6,12 +6,9 @@
 .footer-nav {
     width: 27%;
     float: left;
-    // padding: 30px 0;
     padding-top: 30px;
     font-weight: 500;
     @media (max-width:1105px) {
-        // float: none;
-        // display: block;
         padding: 0;
         width: 100%;
         margin: 0 auto;
@@ -34,7 +31,6 @@
     text-align: center;
     padding: 0 5px;
     @media (max-width:1105px) {
-        // float: none;
         width: 100%;
         padding: 0;
     }
@@ -44,7 +40,6 @@
     width: 27%;
     float: right;
     text-align: right;
-    // padding: 30px 0;
     padding-top: 30px;
     @media (max-width:1105px) {
         width: 100%;
@@ -116,7 +111,6 @@
 .footer-email-input button {
     font-family: 'East Sea Dokdo', cursive;
     background: #0178A5;
-    // width: 45%;
     padding: 5px 15px;
     border: 0;
 }
@@ -125,6 +119,7 @@
     font-size: 4rem;
     @media (max-width:1105px) {
         font-size: 5.5rem;
+        padding-bottom: 15px;
     }
 }
 
@@ -132,10 +127,6 @@
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: #201E21;
-}
-
-.footer-contact-info li:nth-of-type(1) p {
-    font-family: 'East Sea Dokdo', cursive;
 }
 
 .footer-contact-info li:nth-of-type(2) p {
